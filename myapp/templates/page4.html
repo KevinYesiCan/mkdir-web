@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}เมี่ยงคำกลีบบัวหลวงแบบโบราณ{% endblock title %}</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Prompt:wght@300;400;500&family=Sarabun:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun';
+			font-family: 'Prompt';
+			font-family: 'Mitr';
+        }
+    </style>
+
+
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 p-4 flex items-center w-full">
+        <a href="#" class="flex items-center mr-4">
+            <img src="https://thaistationpayson.com/wp-content/uploads/2023/07/Menu-Plates-01.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
+        </a>
+
+        <div class="flex space-x-4">
+            <ul class="flex space-x-4 font-medium">
+                <li>
+                    <a href="/" class="text-white font-Sarabun" aria-current="page">หน้าแรก</a>
+                </li>
+                <li>
+                    <a href="page1" class="text-white font-Sarabun" aria-current="page2">ตารางเทียบแคลอรี</a>
+                </li>
+                <li>
+                    <a href="#" class="text-white font-Sarabun" aria-current="page3">ผู้จัดทำ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="text-xl text-black text-lg text-center underline mt-4">
+        อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี
+    </h1>
+
+    <div class="border border-orange-400 p-4 mt-4 max-w-screen-md mx-auto bg-white shadow-xl" style="border-width: 4px;">
+        <div class="flex flex-col items-center">
+            <img src="{% static 'img/f0201.jpg' %}" alt="หมี่กะทิ" class="" style="width: 500px; height: 300px;">
+            <p class="mt-4 text-xl text-gray-700 text-base">
+                ปลาส้มทรงเครื่องสมุนไพร
+            </p>
+
+            <p class="mt-4 text-sm text-gray-700 text-base">
+                ปลาส้มทรงเครื่องสมุนไพร เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีความโดดเด่นและมีความเป็นเอกลักษณ์ของจังหวัดอุบลราชธานี เป็นต้นตำรับเมนูสมุนไพรโบราณที่มีมาช้านานทั้งในเรื่องของรสชาติที่กลมกล่อม เครื่องปรุงล้วนเป็นสมุนไพรจากธรรมชาติ มีคุณค่าทางสมุนไพรสูง เป็นภูมิปัญญาในการถนอมอาหารด้วยวิธีแปรรูปปลาส้ม เพื่อให้เก็บไว้ได้นานหลายเดือน ใช้ส่วนผสมจากวัตถุดิบธรรมชาติที่มีในท้องถิ่นโดยใช้ส่วนผสมหลัก คือ เนื้อปลา ซึ่งปลาที่นำมาเป็นปลาส้ม จะเลือกใช้ปลาบึกและปลาสวาย ซึ่ง เป็นปลาธรรมชาติจากลุ่มแม่น้ำโขง เนื้อปลามีคุณค่าทางโภชนาการ อุดมไปด้วยโปรตีนสูง ไขมันต่ำ ประกอบกับจังหวัดอุบลราชธานีมีแม่น้ำไหลผ่านถึง 3 สาย ได้แก่ แม่น้ำมูล แม่น้ำชี และแม่น้ำโขง จึงอุดมไปด้วยพันธุ์ปลานานาชนิด จึงได้รับสมญานามยกให้เป็นราชธานีแห่งปลาแซ่บหลาย เมื่อผสมผสานเข้ากับสมุนไพรทอดกรอบที่คลุกเคล้ากับเนื้อปลา ทำให้กลิ่นและรสชาติของปลาส้ม มีเอกลักษณ์ ซึ่งสมุนไพรที่ใช้ทั้งหมด ได้แก่ พริก หอม กระเทียม ขิง ข่า ตะไคร้ ใบมะกรูด ล้วนผ่านการปลูกด้วยวิธีธรรมชาติปลอดสารเคมี มีประโยชน์ของสมุนไพรที่มีสรรพคุณต่อสุขภาพ มีสรรพคุณทางยาทำให้ระบบการเผาผลาญทำงานได้ดี ทำให้ความดันโลหิตต่ำ ลดระดับน้ำตาลในเลือด ลดไขมันในเลือดได้ดี และยังมีส่วนช่วยกระตุ้นระบบการขับถ่ายให้ทำงานอย่างเป็นปกติอีกด้วย
+    จึงถือได้ว่า ปลาส้มทรงเครื่องสมุนไพร เป็นอาหารพื้นเมือง ที่มีสรรพคุณต่อสุขภาพ ของจังหวัดอุบลราชธานี มีความโดดเด่นและมีเอกลักษณ์ ของความเป็นไทย ถูกปรุงแต่งและถ่ายทอดสูตรอาหารพื้นเมืองโบราณของจังหวัดอุบลราชธานีมาช้านาน เป็นอาหารแห่งความมีคุณค่าทางโภชนาการ และสรรพคุณทางยาจากพืชผักสมุนไพรพื้นบ้านที่มีประโยชน์นานาชนิด เป็นวัฒนธรรมอาหารที่ควรอนุรักษ์ และยังแสดงออกถึงภูมิปัญญาท้องถิ่น ถือเป็นภูมิปัญญาไทยและมรดกทางวัฒนธรรมอาหารพื้นเมืองที่ต้องรักษาสืบทอดกันต่อไป
+
+            </p>
+            <div class="flex space-x-1 w-full">
+                <img src="{% static 'img/f0202.jpg' %}" alt="หมี่กะทิ" class="w-1/2 object-contain" style="max-height: 300px;">
+                <img src="{% static 'img/f0203.jpg' %}" alt="หมี่กะทิ" class="w-1/2 object-contain" style="max-height: 300px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto my-8 px-4">
+        {% block content %}{% endblock content %}
+    </div>
+
+</body>
+</html>

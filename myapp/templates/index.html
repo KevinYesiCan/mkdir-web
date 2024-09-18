@@ -1,112 +1,70 @@
 {% extends "_base.html" %}
-
 {% block title %} Home {% endblock %}
-
 {% block content %}
+{% load static %}
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-	  <a href="#" class="flex items-center">
-		<img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-		<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Diouma</span>
-	  </a>
-	  <div class="flex md:order-2">
-		<button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
-		<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-		  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-		</svg>
-		<span class="sr-only">Search</span>
-	  </button>
-		<div class="relative hidden md:block">
-		  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-			<svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-			  fill="none" viewBox="0 0 20 20">
-			  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-				d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-			</svg>
-			<span class="sr-only">Search icon</span>
-		  </div>
-		  <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
-		</div>
-		<button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
-		  <span class="sr-only">Open main menu</span>
-		  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-			  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-		  </svg>
-	  </button>
-	  </div>
-	  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
-		<div class="relative mt-3 md:hidden">
-		  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-			<svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-			  fill="none" viewBox="0 0 20 20">
-			  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-				d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-			</svg>
-		  </div>
-		  <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
-		</div>
-		<ul
-		  class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-		  <li>
-			<a href="#"
-			  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-			  aria-current="page">Home</a>
-		  </li>
-		  <li>
-			<a href="#"
-			  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-		  </li>
-		  <li>
-			<a href="#"
-			  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-		  </li>
-		</ul>
-	  </div>
-	</div>
-  </nav>
+<div class="container mx-auto px-4">
+    <div class="flex justify-between items-center">
+        <div class="flex flex-col items-center">
+            <img src="{% static 'img/card-01.jpg' %}" alt="เมี่ยงคำ" class="rounded-full" style="width: 200px; height: 200px;">
 
-<div class="box-content mt-4 w-32 h-32 border-4 border-slate-500 p-4 text-center rounded font-Kanit text-xl">
-	ผมชื่อชาวโลก
-</div>
+            <p class="text-xl mt-2 text-base font-Mitr">เมี่ยงคำกลับบัวหลวงแบบโบราณ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">มีคุณค่าทางสมุนไพรสูง เพราะมีคุณสมบัติใน</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">การบำรุงรักษาร่างกายถึง 4 เพื่อให้สมดุลกัน กลีบ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">บัวหลวง มีสีสันสวยงาม มีสรรพคุณบำรุง</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ร่างกาย ห้ามเลือด มีเส้นใยอาหารสูง และ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">กระตุ้นการขับถ่าย เป็นยาสมานแผล ช่วยบำรุงร่างกาย บำรุง</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">หัวใจ ลดความดันโลหิตสูง และลด</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ระดับน้ำตาลในเลือดได้</p>
+            <div class="flex flex-col items-center justify-center gap-5 mt-6 md:flex-row"><a
+                class="inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-orange-600 to-orange-500 hover:bg-gradient-to-b dark:shadow-orange-900 shadow-orange-200 hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px font-Sarabun"
+                href="page3">เรียนรู้เพิ่มเติม
+            </a>
+            </div>
+        
 
-<div class="box-border h-auto w-44 p-4 border-4 border-slate-500 mt-10 rounded font-Kanit Thai text-s"> 
-	When controlling the flow of text, using the CSS property 
-	<span class="inline bg-slate-500 text-slate-50">display: inline</span> 
-	will cause the text inside the element to wrap normally. While using the 
-	property 
-	<span class="inline-block bg-slate-500 text-slate-50" 
-		>display: inline-block</span> 
-	will wrap the element to prevent the text inside from extending beyond its 
-	parent. Lastly, using the property 
-	<span class="block bg-slate-500 text-slate-50">display: block</span> will put 
-	the element on its own line and fill its parent. 
-</div> 
+        </div>
 
-<div class="flex justify-center">
-    <nav class="bg-gray-200 rounded-full px-4 py-2">
-        <ul class="flex text-gray-600 gap-4 font-medium py-2">
-            <li>
-                <a href="#" class="rounded-full px-4 py-2 bg-white text-gray-600">1</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="rounded-full px-4 py-2 hover:bg-white hover:text-gray-600 transition duration-300 ease-in-out">2</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="rounded-full px-4 py-2 hover:bg-white hover:text-gray-600 transition duration-300 ease-in-out">3</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="rounded-full px-4 py-2 hover:bg-white hover:text-gray-600 transition duration-300 ease-in-out">4</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="rounded-full px-4 py-2 hover:bg-white hover:text-gray-600 transition duration-300 ease-in-out">5</a>
-            </li>
-        </ul>
-    </nav>
+        <div class="flex flex-col items-center">
+            <img src="{% static 'img/card-02.jpg' %}" alt="ปลาส้ม" class="rounded-full" style="width: 200px; height: 200px;">
+
+            <p class="text-xl mt-2 text-base font-Mitr">ปลาส้มทรงเครื่องสมุนไพร</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ปลาที่นำมาเป็นปลาส้ม จะเลือกใช้ปลาบึกและ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ปลาสวาย ซึ่งเป็นปลาธรรมชาติจากกลุ่มแม่น้ำ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">โขง เนื้อปลาคุณไปด้วยโปรตีนสูง ไขมันต่ำ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ประกอบกับวังหัวกับอุรสาธารณีแม่น้ำไหลผ่าน</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ถึง 3 สาย ได้แก่ แม่น้ำมูล แม่น้ำชี และแม่น้ำโขง</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">จึงคุณไปด้วยพันธุ์ปลานานาชนิด จึงได้รับ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">สมญานามาให้เป็นราชาแห่งปลาเเซ่บหลาย</p>
+            <div class="flex flex-col items-center justify-center gap-5 mt-6 md:flex-row"><a
+                class="inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-orange-600 to-orange-500 hover:bg-gradient-to-b dark:shadow-orange-900 shadow-orange-200 hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px font-Sarabun"
+                href="page4">เรียนรู้เพิ่มเติม
+            </a>
+            </div>
+            
+            
+        </div>
+
+        <div class="flex flex-col items-center ">
+            <img src="{% static 'img/card-03.jpg' %}" alt="หมี่กะทิ" class="rounded-full" style="width: 200px; height: 200px;">
+            
+            <p class="text-xl mt-2 text-base font-Mitr">หมี่กะทิ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">มีคุณค่าทางสมุนไพรสูงมีใยอาหารสูง มีวิตามิน</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">และเกลือแร่ที่สำคัญ อยู่ในส่วนประกอบของ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">อาหารและในส่วนที่เป็นเครื่องเคียง อาหารพื้น</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">เมือง อุดมด้วยพืชผักสมุนไพรมากมายหลาย</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ชนิด ซึ่งมีสรรพคุณทางยาจากสรรพคุณยาเคมี จึง</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">มีคุณสมบัติในการรักษาสุขภาพให้เป็นปกติกับ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">ปรับปรุงสุขภาพให้ดีขึ้นและลดอัตราเสี่ยงต่อ</p>
+            <p class="text-sm text-base mt-2 font-Sarabun">การเกิดโรค</p>
+            <div class="flex flex-col items-center justify-center gap-5 mt-6 md:flex-row"><a
+                class="inline-block w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-orange-600 to-orange-500 hover:bg-gradient-to-b dark:shadow-orange-900 shadow-orange-200 hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px font-Sarabun"
+                href="page5">เรียนรู้เพิ่มเติม
+            </a>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 {% endblock content %}

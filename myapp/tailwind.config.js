@@ -7,7 +7,10 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily:{
-				Kanit: ["Kanit"]
+				Kanit: ["Kanit"],
+				Prompt: ["Prompt"],
+				sarabun: ["Sarabun"],
+				mitr:["Mitr"],
 			}
 		},
 	},

@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}เมี่ยงคำกลีบบัวหลวงแบบโบราณ{% endblock title %}</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Prompt:wght@300;400;500&family=Sarabun:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun';
+			font-family: 'Prompt';
+			font-family: 'Mitr';
+        }
+    </style>
+
+
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 p-4 flex items-center w-full">
+        <a href="#" class="flex items-center mr-4">
+            <img src="https://thaistationpayson.com/wp-content/uploads/2023/07/Menu-Plates-01.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
+        </a>
+
+        <div class="flex space-x-4">
+            <ul class="flex space-x-4 font-medium">
+                <li>
+                    <a href="/" class="text-white font-Sarabun" aria-current="page">หน้าแรก</a>
+                </li>
+                <li>
+                    <a href="page1" class="text-white font-Sarabun" aria-current="page2">ตารางเทียบแคลอรี</a>
+                </li>
+                <li>
+                    <a href="#" class="text-white font-Sarabun" aria-current="page3">ผู้จัดทำ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="text-xl text-black text-lg text-center underline mt-4">
+        อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี
+    </h1>
+    <div class="border border-orange-400 p-4 mt-4 max-w-screen-md mx-auto bg-white shadow-xl" style="border-width: 4px;">
+        <div class="flex flex-col items-center">
+            <img src="{% static 'img/f0301.jpg' %}" alt="หมี่กะทิ" class="" style="width: 500px; height: 300px;">
+            <p class="mt-4 text-xl text-gray-700 text-base">
+                หมี่กะทิ
+            </p>
+
+            <p class="mt-4 text-sm text-gray-700 text-base">
+                หมี่กะทิ เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีส่วนผสมจากวัตถุดิบธรรมชาติที่มีในท้องถิ่น มีความโดดเด่นและมีเอกลักษณ์เฉพาะที่มีความประณีตสวยงาม หมี่กะทิของอุบลราชธานีจะไม่ใช้เส้นหมี่เหมือนภาคกลาง เนื่องจากชาวอีสาน จะทำเส้นก๋วยเตี๋ยวขึ้นเอง ซึ่งเรียกว่า "หมี่" คล้ายกับเส้นเล็กของทางภาคกลาง แต่จะเป็นเส้นที่ตากแห้ง และขดเป็นวงกลม เช่นเดียวกับเส้นจันท์ เมื่อทำหมี่กะทิ ต้องนำเส้นหมี่ไปแช่น้ำให้คลายตัว แล้วลวกด้วยน้ำเดือดจนเส้นนุ่ม สำหรับเครื่องปรุงหมี่กะทิอุบลนั้นใช้ส่วนผสมจากวัตถุดิบธรรมชาติที่มีในท้องถิ่น ผัดกับเครื่องโขลกจากพริกแกงกับกะทิ ใส่หมูสับ เต้าเจี้ยว น้ำมะขามเปียก น้ำตาลปึก เกลือป่น ผัดเครื่องปรุงทั้งหมดให้เข้ากันดี เมื่อรับประทานจัดใส่จานตักราดด้วยน้ำปรุงรสหมี่กะทิเข้มข้น มีรสชาติที่หวานมันกลมกล่อม ราดบนเส้น หมี่ รับประทานกับผักพื้นบ้านล้วนเป็นสมุนไพรจากธรรมชาติ เครื่องเคียงนานาชนิด อาทิ หัวปลี, ถั่วงอก, ใบกุยช่าย, ใบบัวบก, แตงกวา, ผักติ้ว, ใบชะพลู, ยอดมะม่วง, ใบชะมวง, ผักกาดหอม เป็นต้น มีคุณค่าทางสมุนไพรสูงมีใยอาหารสูง มีวิตามิน และเกลือแร่ที่สำคัญ อยู่ในส่วนประกอบของอาหารและในส่วนที่เป็นเครื่องเคียง อาหารพื้นเมือง อุดมด้วยพืชผักสมุนไพรมากมายหลายชนิด ซึ่งมีสรรพคุณทางยาจากสารพฤกษเคมี จึงมีคุณสมบัติในการรักษาสุขภาพให้เป็นปกติกับปรับปรุงสุขภาพให้ดีขึ้นและลดอัตราเสี่ยงต่อการเกิดโรค เช่น โรคไขมันในเลือดสูง โรคหัวใจและหลอดเลือด โรคความดันโลหิตสูง โรคเบาหวาน เป็นต้น
+     จึงถือได้ว่า หมี่กะทิ เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ของจังหวัดอุบลราชธานี มีความโดดเด่นและมีเอกลักษณ์ ของความเป็นไทย เป็นอาหารพื้นเมืองโบราณของจังหวัดอุบลราชธานีมาช้านานที่ได้รับการถูกปรุงแต่งและถ่ายทอดสูตรอาหารพื้นเมืองแบบรุ่นต่อรุ่น จึงเป็นความผสมผสานที่ลงตัวระหว่างชนิดของอาหาร และเครื่องปรุง มีเสน่ห์ของความเป็นไทย เป็นวัฒนธรรมอาหารที่ควรอนุรักษ์ และยังแสดงออกถึงภูมิปัญญาท้องถิ่น และมรดกทางวัฒนธรรมอาหารพื้นเมืองที่ต้องรักษาสืบทอดกันต่อไป
+            </p>
+            <div class="flex space-x-1 w-full">
+                <img src="{% static 'img/f0302.jpg' %}" alt="หมี่กะทิ" class="w-1/2 object-contain" style="max-height: 300px;">
+                <img src="{% static 'img/f0303.jpg' %}" alt="หมี่กะทิ" class="w-1/2 object-contain" style="max-height: 300px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto my-8 px-4">
+        {% block content %}{% endblock content %}
+    </div>
+
+</body>
+</html>
